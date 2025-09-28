@@ -1,4 +1,11 @@
+# Resmi n8n image’ini kullan
 FROM n8nio/n8n:latest
+
+# Çalışma dizini
 WORKDIR /home/node/
+
+# Port
 EXPOSE 5678
-CMD ["n8n", "start"]
+
+# Başlatma komutu
+ENTRYPOINT ["n8n", "start"]
